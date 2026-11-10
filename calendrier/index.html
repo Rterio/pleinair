@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="fr-CA">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Calendrier | Centre de plein air de la Haute-Gaspésie</title>
+  <meta name="description" content="Toutes les activités à venir au Centre de plein air de la Haute-Gaspésie, avec une brève description.">
+  <link rel="icon" href="../images/favicon.png">
+  <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/donnees.js" defer></script>
+  <script src="../assets/site.js" defer></script>
+  <script src="../assets/calendrier.js" defer></script>
+</head>
+<body>
+  <div data-site-header></div>
+
+  <main id="contenu">
+    <section class="page-head">
+      <div class="wrap">
+        <p class="kicker">Calendrier</p>
+        <h1>Activités à venir</h1>
+        <p class="lead">Ouverture de la saison, ski de soirée, initiations et évènements spéciaux au mont Bellevue.</p>
+      </div>
+      <div data-ridge></div>
+    </section>
+
+    <section class="section" style="padding-top:2rem">
+      <div class="wrap">
+        <div class="tabs" role="tablist" aria-label="Affichage du calendrier">
+          <button role="tab" id="t-liste" aria-controls="p-liste" aria-selected="true"><svg class="i"><use href="#i-tree"/></svg>Liste</button>
+          <button role="tab" id="t-mois" aria-controls="p-mois" aria-selected="false" tabindex="-1"><svg class="i"><use href="#i-calendar"/></svg>Calendrier</button>
+        </div>
+
+        <div id="p-liste" role="tabpanel" aria-labelledby="t-liste"></div>
+        <div id="p-mois" role="tabpanel" aria-labelledby="t-mois" hidden></div>
+      </div>
+    </section>
+  </main>
+
+  <div data-site-footer></div>
+</body>
+</html>

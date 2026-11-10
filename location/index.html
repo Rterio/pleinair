@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="fr-CA">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Location | Centre de plein air de la Haute-Gaspésie</title>
+  <meta name="description" content="Location d'équipement de ski et de planche, de la salle du chalet et sorties de groupe au Centre de plein air de la Haute-Gaspésie.">
+  <link rel="icon" href="../images/favicon.png">
+  <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/donnees.js" defer></script>
+  <script src="../assets/site.js" defer></script>
+  <script src="../assets/location.js" defer></script>
+</head>
+<body>
+  <div data-site-header></div>
+
+  <main id="contenu">
+    <section class="page-head">
+      <div class="wrap">
+        <p class="kicker">Location</p>
+        <h1>Location</h1>
+        <p class="lead">Équipement de ski et de planche, salle du chalet ou sortie de groupe : choisissez une option, puis remplissez le formulaire. Un bénévole vous confirmera la disponibilité.</p>
+      </div>
+      <div data-ridge></div>
+    </section>
+
+    <section class="section" style="padding-top:2rem">
+      <div class="wrap">
+        <div class="filters" role="group" aria-label="Filtrer par catégorie">
+          <button class="chip" aria-pressed="true" data-filtre="tout">Tout</button>
+          <button class="chip" aria-pressed="false" data-filtre="équipement"><svg class="i"><use href="#i-ski"/></svg>Équipement</button>
+          <button class="chip" aria-pressed="false" data-filtre="salle"><svg class="i"><use href="#i-cabin"/></svg>Salle</button>
+          <button class="chip" aria-pressed="false" data-filtre="groupe"><svg class="i"><use href="#i-users"/></svg>Groupes</button>
+        </div>
+        <div class="rentals" id="options"></div>
+      </div>
+    </section>
+
+    <section class="section" id="reserver" style="padding-top:0">
+      <div class="wrap form-wrap">
+        <div class="reveal">
+          <p class="kicker">Demande de location</p>
+          <h2>Faites votre demande</h2>
+          <ol class="steps">
+            <li><strong>Remplissez le formulaire</strong>Indiquez l'équipement, la date et le nombre de personnes.</li>
+            <li><strong>On vous confirme</strong>Nous vérifions la disponibilité et vous répondons par courriel.</li>
+            <li><strong>Profitez-en</strong>Présentez-vous au chalet; le paiement se fait sur place.</li>
+          </ol>
+        </div>
+
+        <form class="form reveal" id="form-location" novalidate>
+          <div class="field">
+            <label for="f-nom">Nom complet</label>
+            <input id="f-nom" name="nom" autocomplete="name" required>
+          </div>
+          <div class="field">
+            <label for="f-courriel">Courriel</label>
+            <input id="f-courriel" name="courriel" type="email" autocomplete="email" required>
+          </div>
+          <div class="field">
+            <label for="f-tel">Téléphone <small>(facultatif)</small></label>
+            <input id="f-tel" name="telephone" type="tel" autocomplete="tel">
+          </div>
+          <div class="field">
+            <label for="f-option">Équipement ou installation</label>
+            <select id="f-option" name="option" required></select>
+          </div>
+          <div class="field">
+            <label for="f-date">Date souhaitée</label>
+            <input id="f-date" name="date" type="date" required>
+          </div>
+          <div class="field">
+            <label for="f-duree">Durée</label>
+            <select id="f-duree" name="duree">
+              <option>Demi-journée</option>
+              <option selected>Journée</option>
+              <option>Soirée</option>
+              <option>Autre (préciser)</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="f-qte">Quantité / nombre de personnes</label>
+            <input id="f-qte" name="quantite" type="number" min="1" value="1">
+          </div>
+          <div class="field full">
+            <label for="f-msg">Précisions <small>(pointure, taille, niveau, type d'évènement…)</small></label>
+            <textarea id="f-msg" name="message"></textarea>
+          </div>
+          <div class="form-foot">
+            <button class="btn" type="submit">Envoyer la demande <svg class="i"><use href="#i-arrow"/></svg></button>
+            <p>Une demande n'est pas une réservation confirmée.</p>
+          </div>
+          <div class="form-status" role="status" hidden></div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <div data-site-footer></div>
+</body>
+</html>

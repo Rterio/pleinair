@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="fr-CA">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Centre de plein air de la Haute-Gaspésie | Ski au mont Bellevue</title>
+  <meta name="description" content="Ski alpin, planche à neige et raquette à Sainte-Anne-des-Monts. Une station familiale entièrement gérée par des bénévoles.">
+  <meta property="og:title" content="Centre de plein air de la Haute-Gaspésie">
+  <meta property="og:description" content="Ski alpin, planche à neige et raquette à Sainte-Anne-des-Monts.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="images/favicon.png">
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/donnees.js" defer></script>
+  <script src="assets/site.js" defer></script>
+</head>
+<body>
+  <div data-site-header></div>
+
+  <main id="contenu">
+    <section class="hero">
+      <div class="wrap">
+        <div>
+          <p class="kicker">Centre de plein air de la Haute-Gaspésie</p>
+          <h1>Skier en famille au <em>mont Bellevue</em></h1>
+          <p class="lead">À Sainte-Anne-des-Monts, une petite station chaleureuse entièrement gérée par des bénévoles, avec vue sur la ville et le fleuve. Ski, planche, sous-bois et raquette, de janvier à avril.</p>
+          <div class="hero-actions">
+            <a class="btn" href="calendrier/">Voir le calendrier <svg class="i"><use href="#i-arrow"/></svg></a>
+            <a class="btn btn-ghost" href="location/">Location</a>
+          </div>
+          <ul class="seasons" aria-label="Activités offertes">
+            <li><svg class="i"><use href="#i-ski"/></svg>Ski alpin</li>
+            <li><svg class="i"><use href="#i-board"/></svg>Planche à neige</li>
+            <li><svg class="i"><use href="#i-tree"/></svg>Sous-bois</li>
+            <li><svg class="i"><use href="#i-snowshoe"/></svg>Raquette</li>
+            <li><svg class="i"><use href="#i-moon"/></svg>Ski de soirée</li>
+          </ul>
+        </div>
+        <div class="hero-media">
+          <img src="images/logo.png" alt="Logo du Centre de plein air de la Haute-Gaspésie : des montagnes enneigées sous un soleil" width="474" height="474">
+        </div>
+      </div>
+      <div data-ridge></div>
+    </section>
+
+    <!-- La montagne en chiffres -->
+    <section class="stats-band">
+      <div class="wrap">
+        <ul class="stats">
+          <li class="reveal"><span class="stat-num">23</span><span class="stat-label">pistes</span></li>
+          <li class="reveal"><span class="stat-num">9</span><span class="stat-label">sous-bois</span></li>
+          <li class="reveal"><span class="stat-num">4</span><span class="stat-label">pistes éclairées le soir</span></li>
+          <li class="reveal"><span class="stat-num">1</span><span class="stat-label">remonte-pente en T</span></li>
+          <li class="reveal"><span class="stat-num"><svg class="i"><use href="#i-snow"/></svg></span><span class="stat-label">parc à neige</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div>
+            <p class="kicker">À venir</p>
+            <h2>Au <span class="underline">calendrier</span></h2>
+          </div>
+          <a class="link-arrow" href="calendrier/">Toutes les activités <svg class="i"><use href="#i-arrow"/></svg></a>
+        </div>
+        <div class="events events-grid" data-prochaines="3"></div>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:0">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div>
+            <p class="kicker">La montagne</p>
+            <h2>Petite station, grand cœur</h2>
+          </div>
+        </div>
+        <div class="features">
+          <article class="feature reveal">
+            <div class="badge"><svg class="i"><use href="#i-mountain"/></svg></div>
+            <h3>Pistes et sous-bois</h3>
+            <p>Des pistes pour tous les niveaux, neuf sous-bois et un parc à neige. Le vendredi soir, on skie sous les projecteurs.</p>
+            <svg class="i ghost-icon" aria-hidden="true"><use href="#i-mountain"/></svg>
+          </article>
+          <article class="feature reveal">
+            <div class="badge"><svg class="i"><use href="#i-snowshoe"/></svg></div>
+            <h3>Sentier de raquette</h3>
+            <p>Un sentier balisé et gratuit, avec vue sur la ville et la mer. Apportez vos raquettes et prenez votre temps.</p>
+            <svg class="i ghost-icon" aria-hidden="true"><use href="#i-snowshoe"/></svg>
+          </article>
+          <article class="feature reveal">
+            <div class="badge"><svg class="i"><use href="#i-cup"/></svg></div>
+            <h3>Le chalet</h3>
+            <p>Foyer, casse-croûte, bar et coin jeunesse pour se réchauffer entre deux descentes. La salle se loue aussi pour vos évènements.</p>
+            <svg class="i ghost-icon" aria-hidden="true"><use href="#i-cabin"/></svg>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Commanditaires -->
+    <section class="section">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div>
+            <p class="kicker">Merci!</p>
+            <h2>Nos <span class="underline">commanditaires</span></h2>
+          </div>
+        </div>
+        <p class="lead reveal">Le Centre roule grâce à ses bénévoles et à l'appui des partenaires d'ici. Merci de nous aider à garder la montagne ouverte saison après saison!</p>
+        <div class="sponsors" data-commanditaires></div>
+      </div>
+    </section>
+
+    <!-- Horaire et accès -->
+    <section class="section section-alt">
+      <div class="wrap two-col">
+        <div class="reveal">
+          <p class="kicker">Horaire</p>
+          <h2>Quand venir</h2>
+          <p class="lead" data-site-saison></p>
+          <ul class="hours" data-heures></ul>
+          <p class="note">L'ouverture dépend de la météo et des bénévoles disponibles. Les mises à jour du jour sont publiées sur <a href="https://www.facebook.com/cpahg">notre page Facebook</a>.</p>
+        </div>
+        <div class="map reveal">
+          <iframe src="https://www.google.com/maps?q=49.096576,-66.519127&z=14&output=embed" title="Carte : 295, route Bellevue, Sainte-Anne-des-Monts" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <a class="map-link" href="https://www.google.com/maps/dir/?api=1&destination=49.096576,-66.519127"><svg class="i"><use href="#i-pin"/></svg>295, route Bellevue · Itinéraire</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div data-site-footer></div>
+</body>
+</html>
