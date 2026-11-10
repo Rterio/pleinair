@@ -63,8 +63,8 @@ const ICONS = `
 
 /* Crête de montagnes : séparateur décoratif entre sections. */
 const RIDGE = `<svg class="ridge" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true">
-  <path class="ridge-back" d="M0 90V52l90-28 70 20 110-38 90 34 80-18 120 40 100-30 70 14 130-46 110 40 90-22 120 34 80-20 90 26 90-30v92Z"/>
-  <path class="ridge-front" d="M0 90V70l120-24 90 18 140-30 110 28 90-12 150 26 120-30 100 20 140-24 120 22 110-16 130 22v30Z"/>
+  <path class="ridge-back" d="M0 90V52l90-28 70 20 110-38 90 34 80-18 120 40 100-30 70 14 130-46 110 40 90-22 120 34 80-20 90 26 L1440 40V90Z"/>
+  <path class="ridge-front" d="M0 90V70l120-24 90 18 140-30 110 28 90-12 150 26 120-30 100 20 140-24 120 22 110-16 110 20L1440 66V90Z"/>
 </svg>`;
 
 (function () {
